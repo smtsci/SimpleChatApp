@@ -1,6 +1,9 @@
 # chatapp
 
 > Chat Application with VueJS
+You need install;
+
+npm install firebase --save
 
 ## Build Setup
 
