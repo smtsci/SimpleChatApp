@@ -37,6 +37,7 @@
 <script>
     import Messages from '@/components/Messages'
     import database from '@/firebase/init'
+    import moment from 'moment'
     export default {
         name: "ChatScreen",
         props: ['name'],
@@ -59,7 +60,7 @@
                   id: doc.id,
                   name: doc.data().name,
                   messages: doc.data().messages,
-                  time: doc.data().time
+                  time: moment(doc.data().time).format('LT')
                 });
               }
             });
